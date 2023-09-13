@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    //editable text field to enter weight in kilos
+    <EditText
+        android:id="@+id/KiloText"
+        android:layout_width="242dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginBottom="191dp"
+        android:hint="Enter weight in Kilos"
+        app:layout_constraintBottom_toTopOf="@+id/ResultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
+
+
+    //add button to convert weight in kilos to pounds
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="261dp"
+        android:text="Convert Now"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KiloText" />
+
+
+    //add textview to display converted weight in pounds
+
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="232dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="152dp"
+        android:text=""
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
